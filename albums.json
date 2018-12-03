@@ -1,0 +1,20 @@
+[
+	{
+		"artist": "Brian Kim",
+		"album": "album name",
+		"cover": "./images/art.jpg",
+		"price": 2,
+		"background": "#33AA77",
+		"url": "./",
+		"id": 00001
+	},
+	{
+		"artist": "Tyler Nguyen",
+		"album": "album name2",
+		"cover" : "./images/art2.jpg",
+		"price": 69,
+		"background": "#33AA77",
+		"url": "./",
+		"id": 00002
+	}
+]
