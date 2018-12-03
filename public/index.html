@@ -24,28 +24,11 @@
 		
 			<div class="cards">
 			
-				<div class="card">
-				
-					<div class="card-info" style="background-color:#008844;" id="{{id}}">
-						<a href="id">
-							<div class="card-art">
-								<img src="./images/art.jpg" class="card-art"/>
-							</div>
-							<p class="card-info"><b>{{artist}}</b></p>
-							<p class="card-info">{{album-name}}</p>
-						</div>
-						</a>
-						<div class="card-bottom">
-							<div class="price">
-								<p>${{price}}.00</p>
-							</div>
-							<div class="add">
-								<img src="./images/add.png" style="width:20px;height:20px;margin:10px;"/>
-							</div>
-						</div>
-				</div>
+				{{#each cards}}
+					{{> album}}
+				{{/each}}
 			
-			
+			</div>
 			
 		</main>
 
