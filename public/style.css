@@ -1,44 +1,87 @@
 html {
 	background-color: #000000;
 }
+
+body{
+	position: absolute;
+	margin: 0;
+	height:100%;
+	width:100%;
+}
 * {
-	margin: 0px;
-	padding: 0px;
 	font-family: calibri;
 	color: #ffffff;
 }
+
 header {
+	top: 0px;
+	left: 0px;
 	height: 100px;
 	width: 100%;
+	position: fixed;
+	display: inline-flex;
 	background-color: #444444;
+	z-index: 99;
+	text-align: center;
 }
+
+main{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
 div.title {
-	height: 100px;
-	
+	bottom: 0;
+	width: 240px;
+	height:100px;
+	position: absolute;
 	display: inline-block;
 	background-color: blue;
 }
+
+h1.title{
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 0;
+	left: 10px;
+}
+
 div.cart {
 	background-color: #FF9999;
-	height: 100px;
-	width: 100px;
-	float: right;
+	height: 80px;
+	width: 80px;
+	top: 10px;
+	position:absolute;
+	right: 10px;
+	border-radius: 25%;
 }
+
+img.plus{
+	height: 70px;
+	width: 70px;
+	top: 5px;
+	left: 5px;
+	position: absolute;
+}
+
 a {
 	text-decoration: none;
 	color: white;
 }
 
 div.side-bar {
-	width: 200px;
-	height: 500px;
-	position: absolute;
+	width: 230px;
+	height: 100%;
+	position: fixed;
 	display: inline-block;
 	background-color: red;
 }
 div.cards {
-	margin-left: 200px;
-	position: relative;
+	margin-left: 238px;
+	margin-top: 108px;
+	height: 1000px;
+	position: absolute;
 	display: inline-block;
 }
 
@@ -97,7 +140,7 @@ div.add {
 	width: 40px;
 	height: 40px;
 	background-color: #FF9999;
-	position: relative;
+	position: fixed;
 	display: inline-block;
 	right: 0px;
 	transition: .1s;
