@@ -2,15 +2,21 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>404 Brian Kim Media</title>
+		<title>Your Cart - Brian Kim Media</title>
 		<link rel="stylesheet" href="style.css">
-		<script src="index.js" charset="utf-8" defer></script>
+		<script src="cart.js" charset="utf-8" defer></script>
 		<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet"> 
 	</head>
 	{{> header}}
 	<body>
 		<center>
-			<p style="font-size:400px">cart</p>
+			<div class="cart-container">
+				{{#each albums}}
+					{{> album}}
+				{{/each}}
+				<div/>
+				<button id="empty-cart-button" class="empty-cart-button">Empty Cart</button>
+			</div>
 		</center>
 	</body>
 

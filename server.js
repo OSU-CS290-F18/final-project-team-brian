@@ -29,6 +29,7 @@ app.get(['/', '/index.html'], function (req, res) {
 	res.status(200).render('index', {albums: data});
 });
 
+
 //cart page - mongo
 app.get(['/cart', '/cart/index.html'], function (req, res) {
 	
