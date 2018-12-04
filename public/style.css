@@ -10,12 +10,8 @@ body{
 	width:100%;
 }
 * {
-<<<<<<< HEAD
 	font-family: calibri;
 	color: #ffffff;
-}
-
-=======
 	margin: 0px;
 	padding: 0px;
 	color: #ffffff;
@@ -23,7 +19,6 @@ body{
 h1 {
 	font-weight: 100;
 }
->>>>>>> 5ad0d37ff40c2b44e6d5a083eaaceef3c072f73a
 header {
 	top: 0px;
 	left: 0px;
@@ -44,11 +39,11 @@ main{
 
 div.title {
 	bottom: 0;
-	width: 240px;
+	width: 2000px;
 	height:100px;
 	position: absolute;
 	display: inline-block;
-	background-color: blue;
+	background-color: #444444;
 }
 
 h1.title{
@@ -56,6 +51,12 @@ h1.title{
 	bottom: 0;
 	margin-bottom: 0;
 	left: 10px;
+	font-size: 80px;
+	transition: .1s;
+}
+
+h1.title:hover {
+	text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
 div.cart {
@@ -66,13 +67,18 @@ div.cart {
 	position:absolute;
 	right: 10px;
 	border-radius: 25%;
+	transition: .1s;
 }
 
-img.plus{
-	height: 70px;
-	width: 70px;
-	top: 5px;
-	left: 5px;
+div.cart:hover {
+	background-color: #FFBBBB;
+}
+
+img.cart{
+	height: 60px;
+	width: 60px;
+	top: 10px;
+	left: 10px;
 	position: absolute;
 }
 
@@ -86,7 +92,42 @@ div.side-bar {
 	height: 100%;
 	position: fixed;
 	display: inline-block;
-	background-color: red;
+	background-color: #444444;
+	font-size: 20px;
+}
+div.side-spacer {
+	width: 100%;
+	height: 100px;
+}
+
+p.search-by {
+	font-size: 20px;
+}
+label {
+	margin-left: 15px;
+}
+input {
+	color: black;
+	width: 200px;
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 40px;
+	font-size: 20px;
+}
+button {
+	width: 200px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 20px;
+	height: 40px;
+	font-size: 20px;
+	background-color: #FF9999;
+	border: none;
+	transition: .1s;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #FFBBBB;
 }
 div.cards {
 	margin-left: 238px;
@@ -155,7 +196,6 @@ div.add-button {
 	width: 40px;
 	height: 40px;
 	background-color: #FF9999;
-	position: fixed;
 	display: inline-block;
 	right: 0px;
 	transition: .1s;
