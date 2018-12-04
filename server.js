@@ -44,11 +44,11 @@ app.get('*', function (req, res) {
 });
 
 MongoClient.connect(mongoURL, function (err, client) {
-  if (err) {
-    throw err;
-  }
-  mongoDB = client.db(mongoDBName);
-  app.listen(port, function () {
-    console.log("== Server listening on port", port);
-  });
+	if (err) {
+		throw err;
+	}
+	mongoDB = client.db(mongoDBName);
+	app.listen(port, function () {
+		console.log("== Server listening on port", port);
+	});
 });
