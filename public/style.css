@@ -1,5 +1,6 @@
 html {
 	background-color: #000000;
+	font-family: 'News Cycle', sans-serif;
 }
 
 body{
@@ -9,10 +10,20 @@ body{
 	width:100%;
 }
 * {
+<<<<<<< HEAD
 	font-family: calibri;
 	color: #ffffff;
 }
 
+=======
+	margin: 0px;
+	padding: 0px;
+	color: #ffffff;
+}
+h1 {
+	font-weight: 100;
+}
+>>>>>>> 5ad0d37ff40c2b44e6d5a083eaaceef3c072f73a
 header {
 	top: 0px;
 	left: 0px;
@@ -131,9 +142,13 @@ div.price {
 	display: inline-block;
 }
 div.price > p {
-	transform: translate(10px, 10px);
+	transform: translate(10px, 7px);
 }
-div.add {
+div.add-button {
+	background-image: url("./images/add.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
 	text-align: center;
 	margin: 0px;
 	left: 0px;
@@ -146,7 +161,7 @@ div.add {
 	transition: .1s;
 	float: right;
 }
-div.add:hover {
+div.add-button:hover {
 	cursor: pointer;
 	background-color: #FFBBBB;
 }

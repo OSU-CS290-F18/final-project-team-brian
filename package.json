@@ -1,0 +1,30 @@
+{
+  "name": "final-project-team-brian",
+  "version": "1.0.0",
+  "description": "Buy Brian's latest bangers",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^3.1.10",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"test\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSU-CS290-F18/final-project-team-brian.git"
+  },
+  "keywords": [
+    "Brian"
+  ],
+  "author": "Owen Markley, Rami Hansen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OSU-CS290-F18/final-project-team-brian/issues"
+  },
+  "homepage": "https://github.com/OSU-CS290-F18/final-project-team-brian#readme"
+}

@@ -1,9 +1,9 @@
 <div class="card">
 
 	<div class="card-info" style="background-color:{{background}};" id="{{id}}">
-		<a href="{{url}}">
+		<a href="./{{id}}">
 			<div class="card-art">
-				<img src="./images/{{cover}}" class="card-art"/>
+				<img src="{{cover-art}}" class="card-art"/>
 			</div>
 			<p class="card-info"><b>{{artist-name}}</b></p>
 			<p class="card-info">{{album-name}}</p>
@@ -13,8 +13,9 @@
 			<div class="price">
 				<p>${{price}}.00</p>
 			</div>
-			<div class="add">
-				<img src="./images/add.png" style="width:20px;height:20px;margin:10px;"/>
+			<div class="add-button" id="add-button" album-id="{{id}}">
+			
+				{{!--<img src="./images/add.png" style="width:20px;height:20px;margin:10px;"/>--}}
 			</div>
 		</div>
 </div>
