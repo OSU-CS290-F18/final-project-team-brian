@@ -26,7 +26,7 @@
 		"url": "./",
 		"id": "00003"
 	},
-		{
+	{
 		"artist-name": "ian tank",
 		"album-name": "gimme that dick",
 		"cover-art": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bielerh%C3%B6he_-_Barbarakapelle_-_Brunnen_02.jpg/1280px-Bielerh%C3%B6he_-_Barbarakapelle_-_Brunnen_02.jpg",
@@ -34,5 +34,16 @@
 		"background": "#2255AA",
 		"url": "./",
 		"id": "00004"
+	},
+	{
+		"artist-name": "Shannon",
+		"album-name": "Mr. Hands",
+		"cover-art": "https://media.deseretdigital.com/file/2125000784?resize=width_1200&type=jpg&c=6&a=e0717f4c",
+		"price": 69,
+		"background": "#384910",
+		"url": "./",
+		"id": "00005"
 	}
 ]
+
+
