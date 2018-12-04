@@ -14,6 +14,13 @@ for(i = 0; i < addButtons.length; i++) {
 
 function addToCart(event) {
 	console.log(event.target.getAttribute("album-id"));
+	var artistName = event.target.getAttribute("artist-name");
+	var albumName = 
+	var coverArt = 
+	var price = 
+	var background = 
+	var url = 
+	var id = 
 	console.log("add to cart");
 }
 

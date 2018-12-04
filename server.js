@@ -1,7 +1,7 @@
 var path = require('path');
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 4247;
 var exphbs = require('express-handlebars');
 
 var MongoClient = require('mongodb').MongoClient;
@@ -19,13 +19,11 @@ var mongoDBName = "cart";
 
 var mongoURL = "mongodb://user:290Final*@cluster0-shard-00-00-iwk6u.mongodb.net:27017,cluster0-shard-00-01-iwk6u.mongodb.net:27017,cluster0-shard-00-02-iwk6u.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true"
 
-var mongoDataBase;
-
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 
-//index page - send albumdata - mongo
+//index page - send albumdata
 app.get(['/', '/index.html'], function (req, res) {
 	var data = require('./albums.json');
 	res.status(200).render('index', {albums: data});
@@ -35,6 +33,13 @@ app.get(['/', '/index.html'], function (req, res) {
 app.get(['/cart', '/cart/index.html'], function (req, res) {
 	
 	res.status(200).render('cart');
+});
+
+app.post([/index/addToCart], function(req, res, next){
+	var albumCollection = whatever.collection('albums');
+	albumCollection.insertOne({
+		
+	})
 });
 
 
