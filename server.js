@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 4247;
 var exphbs = require('express-handlebars');
+var bodyParser = require('body-parser');
 
 var MongoClient = require('mongodb').MongoClient;
 var whatever;
@@ -22,6 +23,8 @@ var mongoURL = "mongodb://user:290Final*@cluster0-shard-00-00-iwk6u.mongodb.net:
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
+app.use(bodyParser.json());
+
 
 //index page - send albumdata
 app.get(['/', '/index.html'], function (req, res) {
@@ -32,16 +35,36 @@ app.get(['/', '/index.html'], function (req, res) {
 
 //cart page - mongo
 app.get(['/cart', '/cart/index.html'], function (req, res) {
-	
+	var albumCollection = whatever.collection('albums');
+	albumCollection.find({}).toArray(function (err, albums){
+		if(err){
+			res.status(500).send("error connecting to db");
+		}
+		res.status(200).render('cart', {albums: albums})
+	});
+	//console.log(data.body, 'cart');
+});
+
+app.post(['/index/addToCart'], function(req, res, next){
+	console.log(req.body, "buying");
+	var albumCollection = whatever.collection('albums');
+	albumCollection.insertOne({
+		"artist-name": req.body.artistname,
+		"album-name": req.body.albumname,
+		"cover-art": req.body.coverart,
+		"price": req.body.price,
+		"background": req.body.background,
+		"url": req.body.url,
+		"id": req.body.id
+	});
 	res.status(200).render('cart');
 });
 
-app.post([/index/addToCart], function(req, res, next){
+app.post(['/clear'], function(req, res, next){
 	var albumCollection = whatever.collection('albums');
-	albumCollection.insertOne({
-		
-	})
-});
+	albumCollection.remove({});
+	res.status(200).render('cart');
+})
 
 
 app.use(express.static('public'));
