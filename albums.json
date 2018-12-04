@@ -16,5 +16,23 @@
 		"background": "#55AA00",
 		"url": "./",
 		"id": "00002"
+	},
+	{
+		"artist-name": "Matthew Oh",
+		"album-name": "fuck",
+		"cover-art": "http://sickhorses.com/wp-content/uploads/2013/08/Three-sorta-black-teens.jpg",
+		"price": 1400,
+		"background": "#772222",
+		"url": "./",
+		"id": "00003"
+	},
+		{
+		"artist-name": "ian tank",
+		"album-name": "gimme that dick",
+		"cover-art": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bielerh%C3%B6he_-_Barbarakapelle_-_Brunnen_02.jpg/1280px-Bielerh%C3%B6he_-_Barbarakapelle_-_Brunnen_02.jpg",
+		"price": 1400,
+		"background": "#2255AA",
+		"url": "./",
+		"id": "00004"
 	}
 ]
