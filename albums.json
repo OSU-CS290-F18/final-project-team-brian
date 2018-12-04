@@ -1,20 +1,20 @@
 [
 	{
 		"artist-name": "Brian Kim",
-		"album-name": "album name",
-		"cover-art": "art.jpg",
+		"album-name": "Ok Dana.",
+		"cover-art": "./images/art.jpg",
 		"price": 2,
 		"background": "#33AA77",
 		"url": "./",
-		"id": 00001
+		"id": "00001"
 	},
 	{
 		"artist-name": "Tyler Nguyen",
-		"album-name": "album name2",
-		"cover-art" : "art2.jpg",
+		"album-name": "My Girlfriend Said No",
+		"cover-art" : "https://www.errenskitchen.com/wp-content/uploads/2014/04/quick-and-easy-chinese-noodle-soup3-1.jpg",
 		"price": 69,
-		"background": "#33AA77",
+		"background": "#55AA00",
 		"url": "./",
-		"id": 00002
+		"id": "00002"
 	}
 ]
