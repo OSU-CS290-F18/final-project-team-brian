@@ -15,13 +15,33 @@ for(i = 0; i < addButtons.length; i++) {
 function addToCart(event) {
 	console.log(event.target.getAttribute("album-id"));
 	var artistName = event.target.getAttribute("artist-name");
-	var albumName = 
-	var coverArt = 
-	var price = 
-	var background = 
-	var url = 
-	var id = 
-	console.log("add to cart");
+	console.log(event.target.getAttribute("artist-name"));
+	var albumName = event.target.getAttribute("album-name"); 
+	var coverArt = event.target.getAttribute("cover-art");
+	var priceMine = event.target.getAttribute("price");
+	var backgroundMine = event.target.getAttribute("background");
+	var urlMine = event.target.getAttribute("url");
+	var idMine = event.target.getAttribute("album-id");
+
+	var cartRequest = new XMLHttpRequest();
+	var requestURL = '/index/addToCart';
+	cartRequest.open('POST', requestURL);
+
+	var requestBody = JSON.stringify({
+		artistname: artistName,
+		albumname: albumName,
+		coverart: coverArt,
+		price: priceMine,
+		background: backgroundMine,
+		url: urlMine,
+		id: idMine
+	});
+	console.log(requestBody);
+
+	cartRequest.setRequestHeader('Content-Type', 'application/json');
+	cartRequest.send(requestBody);
+
+	console.log("added to cart");
 }
 
 function search() {
