@@ -1,10 +1,11 @@
 var path = require('path');
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 4247;
 var exphbs = require('express-handlebars');
 
 var MongoClient = require('mongodb').MongoClient;
+var whatever;
 
 //var mongoHost = "localhost"
 //var mongoPort = 27017;
@@ -17,8 +18,6 @@ var mongoDBName = "cart";
 //console.log("mongoDBName: " + mongoDBName);
 
 var mongoURL = "mongodb://user:290Final*@cluster0-shard-00-00-iwk6u.mongodb.net:27017,cluster0-shard-00-01-iwk6u.mongodb.net:27017,cluster0-shard-00-02-iwk6u.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true"
-
-var mongoDataBase;
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
@@ -47,7 +46,7 @@ MongoClient.connect(mongoURL, function (err, client) {
 	if (err) {
 		throw err;
 	}
-	mongoDB = client.db(mongoDBName);
+	whatever = client.db(mongoDBName);
 	app.listen(port, function () {
 		console.log("== Server listening on port", port);
 	});
