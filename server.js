@@ -5,6 +5,7 @@ var port = process.env.PORT || 3000;
 var exphbs = require('express-handlebars');
 
 var MongoClient = require('mongodb').MongoClient;
+var whatever;
 
 //var mongoHost = "localhost"
 //var mongoPort = 27017;
@@ -47,7 +48,8 @@ MongoClient.connect(mongoURL, function (err, client) {
 	if (err) {
 		throw err;
 	}
-	mongoDB = client.db(mongoDBName);
+	
+	whatever = client.db(mongoDBName);
 	app.listen(port, function () {
 		console.log("== Server listening on port", port);
 	});
