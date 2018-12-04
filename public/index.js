@@ -30,16 +30,23 @@ function search() {
 		present = false;
 		console.log("--Checking albums[" + i + "]");
 		console.log(albums[i]);
-		if(albums[i].getAttribute("album-name").toLowerCase() == album) {
+		console.log("album-name: " + albums[i].getAttribute("album-name"));
+		console.log("artist-name: " + albums[i].getAttribute("artist-name"));
+		
+		if(album && albums[i].getAttribute("album-name").toLowerCase().includes(album)) {
+			console.log("album-name check");
 			present = true;
 		}
-		if(albums[i].getAttribute("artist-name").toLowerCase() == artist) {
+		if(artist && albums[i].getAttribute("artist-name").toLowerCase().includes(artist)) {
+			console.log("artist-name check");
 			present = true;
 		}
 		if(present == false) {
+			console.log("------item " + i + "removed");
 			albums[i].remove();
 			i--;
 		}
+
 	}
 }
 
