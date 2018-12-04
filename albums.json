@@ -1,48 +1,183 @@
 [
 	{
-		"artist-name": "Brian Kim",
-		"album-name": "Ok Dana.",
-		"cover-art": "./images/art.jpg",
+		"artist-name": "Tanki",
+		"album-name": "Experienced Smasher",
+		"cover-art": "./images/experienced-smasher.png",
 		"price": 2,
-		"background": "#33AA77",
+		"background": "#e98534",
+		"url": "./",
+		"id": "00000"
+	},
+	{
+		"artist-name": "Nguyen and Where",
+		"album-name": "My Girlfriend Said No",
+		"cover-art" : "./images/my-girlfriend-said-no.png",
+		"price": 8,
+		"background": "#f8c746",
 		"url": "./",
 		"id": "00001"
 	},
 	{
-		"artist-name": "Tyler Nguyen",
-		"album-name": "My Girlfriend Said No",
-		"cover-art" : "https://www.errenskitchen.com/wp-content/uploads/2014/04/quick-and-easy-chinese-noodle-soup3-1.jpg",
-		"price": 69,
-		"background": "#55AA00",
+		"artist-name": "Yung Impulse Buy",
+		"album-name": "Paw Patrol",
+		"cover-art": "./images/paw-patrol.png",
+		"price": 14,
+		"background": "#f2ba8f",
 		"url": "./",
 		"id": "00002"
 	},
 	{
-		"artist-name": "Matthew Oh",
-		"album-name": "fuck",
-		"cover-art": "http://sickhorses.com/wp-content/uploads/2013/08/Three-sorta-black-teens.jpg",
-		"price": 1400,
-		"background": "#772222",
+		"artist-name": "Tanki",
+		"album-name": "Actually?",
+		"cover-art": "./images/actually.png",
+		"price": 4,
+		"background": "#77453a",
 		"url": "./",
 		"id": "00003"
 	},
 	{
-		"artist-name": "ian tank",
-		"album-name": "gimme that dick",
-		"cover-art": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bielerh%C3%B6he_-_Barbarakapelle_-_Brunnen_02.jpg/1280px-Bielerh%C3%B6he_-_Barbarakapelle_-_Brunnen_02.jpg",
-		"price": 1400,
-		"background": "#2255AA",
+		"artist-name": "Party Marti",
+		"album-name": "Hardcore Partier lol",
+		"cover-art": "./images/hardcore-partier-lol.png",
+		"price": 6,
+		"background": "#e5545c",
 		"url": "./",
 		"id": "00004"
 	},
 	{
-		"artist-name": "Shannon",
-		"album-name": "Mr. Hands",
-		"cover-art": "https://media.deseretdigital.com/file/2125000784?resize=width_1200&type=jpg&c=6&a=e0717f4c",
-		"price": 69,
-		"background": "#384910",
+		"artist-name": "Tame Yang",
+		"album-name": "Beaches",
+		"cover-art": "./images/beaches.png",
+		"price": 4,
+		"background": "#004496",
 		"url": "./",
 		"id": "00005"
+	},
+	{
+		"artist-name": "Oh Oh",
+		"album-name": "Oh-oh",
+		"cover-art": "./images/oh-oh.png",
+		"price": 5,
+		"background": "#c14747",
+		"url": "./",
+		"id": "00006"
+	},
+	{
+		"artist-name": "Tame Yang",
+		"album-name": "Bennett",
+		"cover-art": "./images/bennett.png",
+		"price": 12,
+		"background": "#8c6132",
+		"url": "./",
+		"id": "00006"
+	},
+	{
+		"artist-name": "Yung Impulse Buy",
+		"album-name": "Tiki Thing",
+		"cover-art": "./images/tiki-thing.png",
+		"price": 7,
+		"background": "#c06322",
+		"url": "./",
+		"id": "00007"
+	},
+	{
+		"artist-name": "Oh Oh",
+		"album-name": "Breath of the Wild",
+		"cover-art": "./images/breath-of-the-wild.png",
+		"price": 5,
+		"background": "#4d692f",
+		"url": "./",
+		"id": "00008"
+	},
+	{
+		"artist-name": "Bing Bong Dong",
+		"album-name": "Ok Dana.",
+		"cover-art": "./images/ok-dana.png",
+		"price": 17,
+		"background": "#594931",
+		"url": "./",
+		"id": "00009"
+	},
+	{
+		"artist-name": "Nguyen and Where",
+		"album-name": "Shotgun",
+		"cover-art": "./images/shotgun.png",
+		"price": 7,
+		"background": "#f8c746",
+		"url": "./",
+		"id": "00010"
+	},
+	{
+		"artist-name": "Party Marti",
+		"album-name": "Ema Jr.",
+		"cover-art": "./images/ema-jr.png",
+		"price": 7,
+		"background": "#4e4b5e",
+		"url": "./",
+		"id": "00011"
+	},
+	{
+		"artist-name": "Tanki",
+		"album-name": "Suplex Me",
+		"cover-art": "./images/suplex-me.png",
+		"price": 9,
+		"background": "#5f4536",
+		"url": "./",
+		"id": "00012"
+	},
+	{
+		"artist-name": "Oh Oh",
+		"album-name": "Oh Oh OH OHHH",
+		"cover-art": "./images/Oh-Oh-OH-OHHH.png",
+		"price": 27,
+		"background": "#2356d2",
+		"url": "./",
+		"id": "00013"
+	},
+	{
+		"artist-name": "Alyssa",
+		"album-name": "Chlamydia",
+		"cover-art": "./images/chalmydia.png",
+		"price": 1,
+		"background": "#5b962a",
+		"url": "./",
+		"id": "00014"
+	},
+	{
+		"artist-name": "Tame Yang",
+		"album-name": "I'm Pissssseed",
+		"cover-art": "./images/im-pissssseed.png",
+		"price": 14,
+		"background": "#56a8da",
+		"url": "./",
+		"id": "00015"
+	},
+	{
+		"artist-name": "Nguyen and Where",
+		"album-name": "Gravy on my Eggs",
+		"cover-art": "./images/gravy-on-my-eggs.png",
+		"price": 9,
+		"background": "#5787a7",
+		"url": "./",
+		"id": "00016"
+	},
+	{
+		"artist-name": "Tanki",
+		"album-name": "MMMM",
+		"cover-art": "./images/mmmm.png",
+		"price": 10,
+		"background": "#4e3b3d",
+		"url": "./",
+		"id": "00017"
+	},
+	{
+		"artist-name": "Yung Impulse Buy",
+		"album-name": "For the Waves",
+		"cover-art": "./images/for-the-waves.png",
+		"price": 3,
+		"background": "#93861e",
+		"url": "./",
+		"id": "00018"
 	}
 ]
 

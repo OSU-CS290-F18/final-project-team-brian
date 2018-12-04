@@ -1,7 +1,7 @@
 var path = require('path');
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 4247;
+var port = process.env.PORT || 3000;
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
 
@@ -62,8 +62,9 @@ app.post(['/index/addToCart'], function(req, res, next){
 
 app.post(['/clear'], function(req, res, next){
 	var albumCollection = whatever.collection('albums');
+	console.log("removing all albums from cart");
 	albumCollection.remove({});
-	res.status(200).render('cart');
+	//res.status(200).render('cart');
 })
 
 
